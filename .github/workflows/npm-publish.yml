@@ -25,7 +25,6 @@ jobs:
       - run: npm install -g aws-sdk
       - run: npm ci
       # - run: npm publish
-      - run: npm build
       - run: npx can-npm-publish --verbose && npm publish || echo "No need to publish"
         env:
           # NODE_AUTH_TOKEN: ${{secrets.npm_token}}
