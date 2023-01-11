@@ -1,5 +1,5 @@
 {
-  "name": "@rumblefishdev/eth-signer-kms",
+  "name": "@yoheinishikubo/eth-signer-kms",
   "version": "2.3.0",
   "description": "Sign ethereum transaction/messages using KMS service from AWS",
   "main": "dist/index.js",
@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rumblefishdev/eth-signer-kms.git"
+    "url": "git+https://github.com/yoheinishikubo/eth-signer-kms.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rumblefishdev/eth-signer-kms/issues"
+    "url": "https://github.com/yoheinishikubo/eth-signer-kms/issues"
   },
-  "homepage": "https://github.com/rumblefishdev/eth-signer-kms#readme",
+  "homepage": "https://github.com/yoheinishikubo/eth-signer-kms#readme",
   "dependencies": {
     "@ethersproject/abstract-signer": "^5.5.4",
     "@ethersproject/bytes": "^5.5.4",
@@ -31,7 +31,8 @@
     "asn1.js": "^5.4.1",
     "bn.js": "^4.12.0",
     "ethereumjs-util": "^7.1.5",
-    "ethers": "^5.5.4"
+    "ethers": "^5.5.4",
+    "ethers-gcp-kms-signer": "^1.1.6"
   },
   "devDependencies": {
     "@metamask/eth-sig-util": "^4.0.1",
