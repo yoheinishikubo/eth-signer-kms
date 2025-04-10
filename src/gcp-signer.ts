@@ -67,6 +67,16 @@ export class GCPSigner extends Signer implements TypedDataSigner {
     return this._signDigest(hash)
   }
 
+  async signTypedData(
+    domain: TypedDataDomain,
+    types: Record<string, Array<TypedDataField>>,
+    value: Record<string, any>
+  ): Promise<string> {
+    const hash = _TypedDataEncoder.hash(domain, types, value)
+    return this._signDigest(hash)
+  }
+
+
   async signTransaction(
     transaction: providers.TransactionRequest
   ): Promise<string> {

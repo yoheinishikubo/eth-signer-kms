@@ -13,7 +13,7 @@ import {
   SignTypedDataVersion
 } from '@metamask/eth-sig-util'
 
-describe('KMSSinger', () => {
+describe('KMSSigner', () => {
   let kms: AWS.KMS
   let keyId: string
   let walletAddress: string

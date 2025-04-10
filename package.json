@@ -1,6 +1,6 @@
 {
   "name": "@yoheinishikubo/eth-signer-kms",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "description": "Sign ethereum transaction/messages using KMS service from AWS",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

@@ -68,6 +68,22 @@ export class KMSSigner extends Signer implements TypedDataSigner {
     return utils.joinSignature(sig)
   }
 
+  async signTypedData(
+    domain: TypedDataDomain,
+    types: Record<string, Array<TypedDataField>>,
+    value: Record<string, any>
+  ): Promise<string> {
+    const hash = _TypedDataEncoder.hash(domain, types, value)
+    const sig = await createSignature({
+      kmsInstance: this.kmsInstance,
+      keyId: this.keyId,
+      message: hash,
+      address: await this.getAddress()
+    })
+
+    return utils.joinSignature(sig)
+  }
+
   async signTransaction(
     transaction: providers.TransactionRequest
   ): Promise<string> {
