@@ -1,4 +1,3 @@
-import { KMS } from 'aws-sdk'
 import * as asn1 from 'asn1.js'
 import { BigNumber, utils } from 'ethers'
 
@@ -69,7 +68,7 @@ const getRecoveryParam = (
 }
 
 export const getEthAddressFromPublicKey = (
-  publicKey: KMS.PublicKeyType
+  publicKey
 ): string => {
   const res = EcdsaPubKey.decode(publicKey, 'der')
   const pubKeyBuffer: Buffer = res.pubKey.data

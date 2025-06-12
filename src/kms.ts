@@ -8,7 +8,7 @@ import { utils } from 'ethers'
 
 export const getPublicKey = (getPublicKeyParams: GetPublicKeyParams) => {
   const { keyId, kmsInstance } = getPublicKeyParams
-  return kmsInstance.getPublicKey({ KeyId: keyId }).promise()
+  return kmsInstance.getPublicKey({ KeyId: keyId })
 }
 export const getEthAddressFromKMS = async (
   getEthAddressFromKMSparams: GetEthAddressFromKMSparams
@@ -29,5 +29,4 @@ export const sign = (signParams: SignParams) => {
       SigningAlgorithm: 'ECDSA_SHA_256',
       MessageType: 'DIGEST'
     })
-    .promise()
 }

@@ -1,6 +1,6 @@
 {
   "name": "@yoheinishikubo/eth-signer-kms",
-  "version": "2.3.1",
+  "version": "2.3.2",
   "description": "Sign ethereum transaction/messages using KMS service from AWS",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -35,11 +35,11 @@
     "ethers-gcp-kms-signer": "^1.1.6"
   },
   "devDependencies": {
+    "@aws-sdk/client-kms": "^3.828.0",
     "@metamask/eth-sig-util": "^4.0.1",
     "@types/jest": "^28.1.0",
     "@typescript-eslint/eslint-plugin": "^4.27.0",
     "@typescript-eslint/parser": "^4.27.0",
-    "aws-sdk": "*",
     "eslint": "^7.29.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
@@ -47,7 +47,7 @@
     "prettier": "^2.3.1",
     "ts-jest": "^28.0.4",
     "ts-node": "^10.8.0",
-    "typescript": "^4.3.4"
+    "typescript": "^5.8.3"
   },
   "publishConfig": {
     "access": "public"
