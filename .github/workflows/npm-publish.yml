@@ -22,7 +22,7 @@ jobs:
         with:
           node-version: 14
           registry-url: https://npm.pkg.github.com
-      - run: npm install -g aws-sdk
+      # - run: npm install -g aws-sdk
       - run: npm ci
       # - run: npm publish
       - run: npx can-npm-publish --verbose && npm publish || echo "No need to publish"

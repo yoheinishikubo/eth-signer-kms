@@ -2,5 +2,4 @@ node_modules
 dist
 .vscode
 bun.lock
-package-lock.json
 yarn.lock
