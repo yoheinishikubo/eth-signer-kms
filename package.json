@@ -23,6 +23,8 @@
   },
   "homepage": "https://github.com/yoheinishikubo/eth-signer-kms#readme",
   "dependencies": {
+    "@aws-sdk/client-kms": "^3.828.0",
+    "@metamask/eth-sig-util": "^4.0.1",
     "@ethersproject/abstract-signer": "^5.5.4",
     "@ethersproject/bytes": "^5.5.4",
     "@ethersproject/hash": "^5.5.4",
@@ -35,8 +37,6 @@
     "ethers-gcp-kms-signer": "^1.1.6"
   },
   "devDependencies": {
-    "@aws-sdk/client-kms": "^3.828.0",
-    "@metamask/eth-sig-util": "^4.0.1",
     "@types/jest": "^28.1.0",
     "@typescript-eslint/eslint-plugin": "^4.27.0",
     "@typescript-eslint/parser": "^4.27.0",
